@@ -1,17 +1,17 @@
-# jsondiffpatch-for-react
+# jsondiffpatch-react
 
 - Originally forked from archived https://github.com/hero-guo/jsondiffpatch-for-react
 - Based on https://github.com/benjamine/jsondiffpatch
 
 # 1. install
 
-    npm install jsondiffpatch-for-react
+    npm install jsondiffpatch-react
 
 # 2. usage
 
 ```jsx
 import React from 'react';
-import JsonDiffReact from 'jsondiffpatch-for-react';
+import JsonDiffReact from 'jsondiffpatch-react';
 
 <JsonDiffReact
     right: PropTypes.any,

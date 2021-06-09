@@ -1,14 +1,11 @@
-/**
- * Created by guoguangyu on 2016/10/25.
-*/
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {Router, Route, browserHistory} from 'react-router';
-import Main from './main';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Route } from "react-router-dom";
+import Main from "./main";
 
-ReactDOM.render((
-  <Router history={browserHistory}>
+ReactDOM.render(
+  <BrowserRouter>
     <Route path="/" component={Main} />
-  </Router>),
-  document.querySelector('#wrapper')
+  </BrowserRouter>,
+  document.querySelector("#wrapper")
 );

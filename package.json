@@ -1,7 +1,7 @@
 {
-  "name": "jsondiffpatch-for-react",
-  "version": "1.0.4",
-  "description": "jsondiffpatch for react",
+  "name": "jsondiffpatch-react",
+  "version": "1.0.6",
+  "description": "jsondiffpatch react",
   "main": "./lib/jsondiff-for-react.js",
   "scripts": {
     "start": "NODE_ENV=dev node server.js",
@@ -11,19 +11,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hero-guo/jsondiffpatch-for-react.git"
+    "url": "git+https://github.com/bluepeter/jsondiffpatch-react.git"
   },
   "keywords": [
     "react",
     "json",
     "diff"
   ],
-  "author": "guoguangyu",
+  "author": "bluepeter",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hero-guo/jsondiffpatch-for-react/issues"
+    "url": "https://github.com/bluepeter/jsondiffpatch-react/issues"
   },
-  "homepage": "https://github.com/hero-guo/jsondiffpatch-for-react#readme",
+  "homepage": "https://github.com/bluepeter/jsondiffpatch-react#readme",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel": "^6.5.2",
@@ -59,11 +59,11 @@
     "postcss": "^5.0.21",
     "postcss-loader": "^0.8.2",
     "prop-types": "^15.6.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-hot-loader": "^4.12.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hot-loader": "^4.13.0",
     "react-map-styles": "^0.3.0",
-    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "redux-logger": "^3.0.6",
     "rimraf": "^2.5.4",
     "style-loader": "^0.12.3",

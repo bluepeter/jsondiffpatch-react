@@ -1,10 +1,6 @@
-/**
- * Created by guoguangyu on 2016/10/25.
- */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import * as Jsondiffpatch from "jsondiffpatch";
-
 import "jsondiffpatch/dist/formatters-styles/html.css";
 import "jsondiffpatch/dist/formatters-styles/annotated.css";
 
