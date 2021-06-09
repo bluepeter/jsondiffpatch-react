@@ -1,7 +1,7 @@
 # jsondiffpatch-for-react
-Based on https://github.com/benjamine/jsondiffpatch
 
-
+- Originally forked from archived https://github.com/hero-guo/jsondiffpatch-for-react
+- Based on https://github.com/benjamine/jsondiffpatch
 
 # 1. install
 
@@ -25,33 +25,33 @@ import JsonDiffReact from 'jsondiffpatch-for-react';
 
 # 3. component props
 
-* `left` (array, object, string)
+- `left` (array, object, string)
 
-* `right` (array, object, string)
+- `right` (array, object, string)
 
-* `show` (bool)
+- `show` (bool)
 
-    you can show/hide unchanged values
+  you can show/hide unchanged values
 
-* `annotated` (bool)
+- `annotated` (bool)
 
-    This will render the original JSON delta in html, with annotations aside explaining the meaning of each part. This attempts to make the JSON delta format self-explained.
+  This will render the original JSON delta in html, with annotations aside explaining the meaning of each part. This attempts to make the JSON delta format self-explained.
 
-* `tips` (string)
+- `tips` (string)
 
   Message that will displayed in case both elements are identical.
 
-* `objectHash` (function)
+- `objectHash` (function)
 
-  Will be passed to *jsondiffpatch* to improve array comparison performance, as described [here](https://github.com/benjamine/jsondiffpatch/blob/master/docs/arrays.md#an-example-using-objecthash).
+  Will be passed to _jsondiffpatch_ to improve array comparison performance, as described [here](https://github.com/benjamine/jsondiffpatch/blob/master/docs/arrays.md#an-example-using-objecthash).
   Example:
 
   ```jsx
   <JsonDiffReact
     left={left}
     right={right}
-    objectHash={(obj: any) => obj.id || obj._id || obj.name || JSON.stringify(obj)}
+    objectHash={(obj: any) =>
+      obj.id || obj._id || obj.name || JSON.stringify(obj)
+    }
   />
   ```
-
-  
