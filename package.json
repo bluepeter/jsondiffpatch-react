@@ -75,7 +75,8 @@
     "webpack-dev-server": "^1.12.1"
   },
   "peerDependencies": {
-    "react": ">=0.13.2 || ^0.14 || ^15.0.0"
+    "react": "^16.8 || ^17 || ^18",
+    "react-dom": "^16.8 || ^17 || ^18"
   },
   "dependencies": {
     "jsondiffpatch": "^0.4.1",
