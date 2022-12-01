@@ -64,4 +64,5 @@ import JsonDiffReact from 'jsondiffpatch-react';
 # Development notes
 
 To publish to NPM, change the version number in `package.json` and `npm publish`
-once complete.
+once complete. Then, go to Github Releases and follow the instructions to
+publish a new version there too.
