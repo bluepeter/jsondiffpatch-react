@@ -1,6 +1,7 @@
 # jsondiffpatch-react
 
-- Originally forked from archived https://github.com/hero-guo/jsondiffpatch-for-react
+- Originally forked from archived
+  https://github.com/hero-guo/jsondiffpatch-for-react
 - Based on https://github.com/benjamine/jsondiffpatch
 
 # 1. install
@@ -35,7 +36,9 @@ import JsonDiffReact from 'jsondiffpatch-react';
 
 - `annotated` (bool)
 
-  This will render the original JSON delta in html, with annotations aside explaining the meaning of each part. This attempts to make the JSON delta format self-explained.
+  This will render the original JSON delta in html, with annotations aside
+  explaining the meaning of each part. This attempts to make the JSON delta
+  format self-explained.
 
 - `tips` (string)
 
@@ -43,7 +46,9 @@ import JsonDiffReact from 'jsondiffpatch-react';
 
 - `objectHash` (function)
 
-  Will be passed to _jsondiffpatch_ to improve array comparison performance, as described [here](https://github.com/benjamine/jsondiffpatch/blob/master/docs/arrays.md#an-example-using-objecthash).
+  Will be passed to _jsondiffpatch_ to improve array comparison performance, as
+  described
+  [here](https://github.com/benjamine/jsondiffpatch/blob/master/docs/arrays.md#an-example-using-objecthash).
   Example:
 
   ```jsx
@@ -55,3 +60,8 @@ import JsonDiffReact from 'jsondiffpatch-react';
     }
   />
   ```
+
+# Development notes
+
+To publish to NPM, change the version number in `package.json` and `npm publish`
+once complete.
