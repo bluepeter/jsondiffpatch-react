@@ -12,7 +12,7 @@ class JsonDiffReact extends Component {
     left: PropTypes.any,
     show: PropTypes.bool,
     annotated: PropTypes.bool,
-    tips: PropTypes.string,
+    tips: PropTypes.any,
     objectHash: PropTypes.func,
   };
   render() {
@@ -21,7 +21,7 @@ class JsonDiffReact extends Component {
       left,
       show = true,
       annotated = false,
-      tips,
+      tips = "Both objects are identical.",
       objectHash,
     } = this.props;
     const delta = Jsondiffpatch.create({
@@ -33,10 +33,10 @@ class JsonDiffReact extends Component {
     show ? formatters.html.showUnchanged() : formatters.html.hideUnchanged();
     return html ? (
       <div dangerouslySetInnerHTML={{ __html: html }} />
+    ) : typeof tips === "string" ? (
+      <p style={{ fontSize: 12, color: "#999" }}>{tips}</p>
     ) : (
-      <p style={{ fontSize: 12, color: "#999" }}>
-        {tips || "Both objects are identical."}
-      </p>
+      tips
     );
   }
 }
