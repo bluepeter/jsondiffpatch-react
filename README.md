@@ -19,7 +19,7 @@ import JsonDiffReact from 'jsondiffpatch-react';
     left: PropTypes.any,
     show: PropTypes.bool,
     annotated: PropTypes.bool,
-    tips: PropTypes.string,
+    tips: PropTypes.any,
     objectHash: PropTypes.func,
 />
 ```
@@ -40,9 +40,9 @@ import JsonDiffReact from 'jsondiffpatch-react';
   explaining the meaning of each part. This attempts to make the JSON delta
   format self-explained.
 
-- `tips` (string)
+- `tips` (any)
 
-  Message that will displayed in case both elements are identical.
+  Displayed in case both elements are identical.
 
 - `objectHash` (function)
 
